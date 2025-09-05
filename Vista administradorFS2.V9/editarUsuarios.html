@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Editar Usuarios</title>
+  <link rel="stylesheet" href="styleAdministrador.css">
+</head>
+<body>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <div>
+      <h2>GameSearch</h2>
+      <div class="menu">
+        <a href="pPrincipalAdmin.html" class="active">inicio</a>
+
+        <a href="productosAdmin.html">🎮 Productos</a>
+        <a href="usuarios.html" class="active">👨‍💼 Usuarios</a>
+
+      </div>
+    </div>
+    <div class="footer">
+      <a href="#">👤 Perfil</a>
+    </div>
+  </div>
+
+  <!-- Contenido principal -->
+  <main class="main-content">
+    <header>
+      <h1>Editar Usuario</h1>
+    </header>
+
+    <form class="formulario">
+      <div id="formulario_nombre" class="nombre">
+        <label for="nombre">Nombre</label>
+        <div class="formulario__grupo-input">
+          <input type="text" id="nombre" value="Carlos Pérez">
+        </div>
+        <p class="error" id="error-nombre"></p>
+      </div>
+
+      <label for="rol">Rol</label>
+      <select id="rol">
+        <option selected>Administrador</option>
+        <option>Vendedor</option>
+        <option>Cliente</option>
+      </select>
+
+      <div id="formulario_nombre" class="nombre">
+        <label for="email">Correo Electrónico</label>
+        <div class="formulario__grupo-input">
+          <input type="email" id="email" value="carlos@gamesearch.com">
+        </div>
+        <p class="error" id="error-email"></p>
+      </div>
+
+      <label for="estado">Estado</label>
+      <select id="estado">
+        <option selected>Activo</option>
+        <option>Inactivo</option>
+      </select>
+
+      <button type="submit" class="btn-primary">Guardar Cambios</button>
+      <a href="usuarios.html" class="btn-secondary">Cancelar</a>
+    </form>
+  </main>
+  <script src="Java Script/validaciones_edicionUsuarios.js"></script>
+</body>
+</html>

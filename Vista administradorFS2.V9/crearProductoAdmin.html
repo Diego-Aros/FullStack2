@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameSearch - Administrador</title>
+    <link rel="stylesheet" href="styleAdministrador.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div>
+            <h2>GameSearch</h2>
+            <div class="menu">
+                <a href="pPrincipalAdmin.html" class="active">inicio</a>
+
+                <a href="productosAdmin.html">🎮 Productos</a>
+                <a href="usuarios.html">👨‍💼 Empleados</a>
+            </div>
+        </div>
+        <div class="footer">
+            <a href="#">👤 Perfil</a>
+        </div>
+    </div>
+
+  <main class="main-content">
+    <header>
+      <h1>Crear Nuevo Producto</h1>
+    </header>
+
+    <form action="" class="formulario" id="formulario">
+      <div id="formulario_nombre" class="nombre">
+      <label for="nombre">Nombre</label>
+        <div class="formulario__grupo-input">
+          <input type="text" class="formulario__input" id="nombre" placeholder="Ej: Mario odeyssey">
+        </div>
+        <p class="error" id="error-nombre"></p>
+      </div>
+
+      <div id="formulario_categoria" class="categoria">
+        <label for="categoria">Categoría</label>
+        <div class="formulario__grupo-input">
+          <input type="text" class="formulario__input" id="categoria" placeholder="Ej: Nintendo Switch">
+        </div>
+        <p class="error" id="error-categoria"></p>
+      </div>
+
+      <div id="formulario_precio" class="precio">
+        <label for="precio">Precio</label>
+        <div class="formulario__grupo-input">
+          <input type="number" class="formulario__input" id="precio" placeholder="Ej: 299.99">
+        </div>
+        <p class="error" id="error-precio"></p>
+      </div>
+
+      <div id="formulario_stock" class="stock">
+        <label for="stock">Stock</label>
+        <div class="formulario__grupo-input">
+          <input type="number" class="formulario__input" name="stock" id="stock" placeholder="Ej: 15">
+        </div>
+        <p class="error" id="error-stock"></p>
+      </div>
+
+      <div id="descripcion" class="descripcion">
+      <label for="descripcion">Descripción</label>
+      <textarea id="descripcion" rows="4" placeholder="Escribe una breve descripción del producto..."></textarea>
+      </div>
+
+      <div id="submit" class="submit">
+      <button type="submit" class="btn-primary">Guardar Producto</button>
+      <a href="productosAdmin.html" class="btn-secondary">Cancelar</a>
+      </div>
+    </form>
+
+  
+  </main>
+  <script src ="Java Script/validacioness.js"></script>
+</body>
+</html>

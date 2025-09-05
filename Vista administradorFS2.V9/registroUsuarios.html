@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameSearch - Administrador</title>
+    <link rel="stylesheet" href="styleAdministrador.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div>
+            <h2>GameSearch</h2>
+            <div class="menu">
+                <a href="pPrincipalAdmin.html" class="active">inicio</a>
+
+                <a href="productosAdmin.html">🎮 Productos</a>
+                <a href="usuarios.html">👨‍💼 Empleados</a>
+
+            </div>
+        </div>
+        <div class="footer">
+            <a href="#">👤 Perfil</a>
+        </div>
+    </div>
+
+    <!-- Contenido principal -->
+    <div class="main">
+        <h1>NUEVO USUARIO</h1>
+        <div class="form-container">
+            <h2>Registro de usuario</h2>
+            <form action="#" class="formulario" method="post">
+
+                <div id="formulario_nombre" class="nombre">
+                    <label for="nombre">Nombre completo</label>
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" id="nombre" name="nombre" required>
+                    </div>
+                    <p class="error" id="error-nombre"></p>
+                </div>
+
+                <div id="formulario_correo" class="correo">
+                    <label for="correo">Correo</label>
+                    <div class="formulario__grupo-input">
+                        <input type="email" class="formulario__input" id="correo" name="correo" required>
+                    </div>
+                    <p class="error" id="error-correo"></p>
+                </div>
+
+                <div id="formulario_usuario" class="usuario">
+                    <label for="usuario">Usuario</label>
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" id="usuario" name="usuario" required>
+                    </div>
+                    <p class="error" id="error-usuario"></p>
+                </div>
+
+                <div id="formulario_password" class="password">
+                    <label for="password">Contraseña</label>
+                    <div class="formulario__grupo-input">
+                        <input type="password" class="formulario__input" id="password" name="password" required>
+                    </div>
+                    <p class="error" id="error-password"></p>
+                </div>
+
+                <div id="formulario_confirmar" class="confirmar">
+                    <label for="confirmar">Confirmar contraseña</label>
+                    <div class="formulario__grupo-input">
+                        <input type="password" class="formulario__input" id="confirmar" name="confirmar" required>
+                    </div>
+                    <p class="error" id="error-confirmar"></p>
+                </div>
+
+                <div id="formulario_telefono" class="telefono">
+                    <label for="telefono">Teléfono (opcional)</label>
+                    <input type="tel" id="telefono" name="telefono">
+                    <p class="error" id="error-telefono"></p>
+                </div>
+                <div class="row">
+                    <select name="region" required>
+                        <option value="">-- Seleccione la región --</option>
+                        <option>Región Metropolitana de Santiago</option>
+                        <option>Región de Los Ángeles</option>
+                        <option>Región de Ñuble</option>
+                    </select>
+
+                    <select name="comuna" required>
+                        <option value="">-- Seleccione la comuna --</option>
+                        <option>Linares</option>
+                        <option>Lanqui</option>
+                        <option>Concepción</option>
+                    </select>
+                </div>
+
+                <button type="submit">Registrar</button>
+            </form>
+        </div>
+    </div>
+    <script src="Java Script/validaciones_usuarios.js"></script>
+</body>
+</html>
